@@ -1,0 +1,96 @@
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title> Roadways | {% block title %}{% endblock title %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/r.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'js/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'img/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'js/main.js' %}" />
+    <link rel="stylesheet" href="{% static 'mine/styles.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" /> -->
+    <!-- <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" /> -->
+</head>
+
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+   <!-- Navbar Start -->
+   <div class="container-fluid sticky-top bg-dark  shadow-sm px-5 pe-lg-0">
+    <nav class="navbar navbar-expand-lg bg-dark  navbar-dark py-3 py-lg-0">
+        <a href="{% url 'home' %}" class="navbar-brand">
+            <h1 style=" font-size: 26px;" class="m-0 display-4 text-uppercase text-white"><img src="{% static 'img/r.png' %}" alt="Image"></i> Roadways</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0" style="font-family:'poppins">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}"class="nav-item nav-link">About</a>
+                <a href="{% url 'service' %}" class="nav-item nav-link">Service</a>
+                <a href="{% url 'project' %}" class="nav-item nav-link">Project</a>
+                <a href="{% url 'team' %}" class="nav-item nav-link">Team</a>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+
+    {% block main-content %}{% endblock main-content %}
+    {% block vid-content %} {% endblock vid-content %}
+    {% block footer %}{% endblock footer %}
+
+    <!-- {% block information %}{% endblock information %} -->
+    <!-- {% block payment-gateway %}{% endblock payment-gateway %} -->
+    <!-- Back to Top -->
+    <a href="" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <script>
+    window.addEventListener("load", function () {
+        // Hide the loader when the page is fully loaded
+        document.getElementById("loader-wrapper").style.display = "none";
+    });
+
+
+    </script>
+
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+    

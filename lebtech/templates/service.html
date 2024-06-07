@@ -1,0 +1,175 @@
+{% load static%}
+{% include 'navbar.html' %}
+
+
+{% block content %}
+    <!-- Services Start -->
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">We Provide <span class="text-primary">The Best</span> Construction Services</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-1.jpg" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-road text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3"></h4>
+                        <p>Skillful road construction minimizes congestion, promoting a seamless flow of traffic for a more efficient and stress-free commute.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-2.jpg" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-tractor text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3"></h4>
+                        <p>Thoughtful road design incorporates eco-friendly practices, minimizing environmental impact and promoting sustainability in infrastructure development.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-3.jpg" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-road text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3"></h4>
+                        <p>Well-planned roads enhance community accessibility, ensuring that residents have convenient connections to essential services, schools, and recreational areas.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-4.jpg" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-tractor text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3"></h4>
+                        <p>Robust road construction minimizes maintenance requirements, saving costs in the long run and contributing to sustainable budgeting for local authorities.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-5.jpg" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-road text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3"></h4>
+                        <p>Modern road construction integrates smart technologies, enhancing safety through features like intelligent traffic management systems and responsive infrastructure.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-6.jpg" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-tractor text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3"></h4>
+                        <p>Roads built with resilience in mind withstand adverse weather conditions, ensuring reliability and safety even in challenging climates.</p>
+                        <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+   <!-- Footer Start -->
+   <div class="footer container-fluid position-relative bg-dark text-white-50 py-6 px-5">
+    <div class="row g-5">
+        <div class="col-lg-6 pe-lg-5">
+            <a href="{% url 'home' %}" class="navbar-brand">
+                <h1 style=" font-size: 17px;" class="m-0 display-4 text-uppercase text-white"><img src="{% static 'img/r.png' %}" alt="Image"></i> Roadways</h1>
+            </a>
+            <p>Road construction is our art of connectivity, linking communities and fostering progress.</p>
+            <p><i class="fa fa-map-marker-alt me-2"></i>No 46, Datum Camp, Mabushi, Abuja</p>
+            <p><i class="fa fa-phone-alt me-2"></i>+234 7081700000, +2347049460070</p>
+            <p><i class="fa fa-envelope me-2"></i>Roadwaysltd@Roadways.ltd</p>
+            <div class="d-flex justify-content-start mt-4">
+                <!-- <a class="btn btn-lg  btn-lg-square rounded-0 me-2" href="https://Roadways.ltd/"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg  btn-lg-square rounded-0 me-2" href="https://Roadways.ltd/"><i class="fab fa-facebook-f"></i></a> -->
+                <a class="btn btn-lg  btn-lg-square rounded-0 me-2" href="https://www.instagram.com/Roadways.ltd?igshid=MmVlMjlkMTBhMg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://Roadways.ltd/"><i class="fab fa-youtube"></i></a> -->
+            </div>
+            
+        </div>
+        <!-- <div class="col-lg-6 ps-lg-5">
+            <div class="row g-5">
+                <div class="col-sm-6">
+                    <h4 class="text-white text-uppercase mb-4">Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="{% url 'home' %}"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="text-white-50 mb-2" href="{% url 'about' %}"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class="text-white-50 mb-2" href="{% url 'service' %}"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class="text-white-50 mb-2" href="{% url 'team' %}"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                        <a class="text-white-50" href="{% url 'contact' %}"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                    </div> -->
+                </div>
+                <div class="footer-icon d-flex">
+                    <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <!-- <div class="col-sm-12">
+                    <h4 class="text-white text-uppercase mb-4">Newsletter</h4>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-light" style="padding: 20px 30px;" placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign Up</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark bg-light-radial text-white border-top border-color px-0">
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="py-4 px-5 text-center text-md-start">
+            <p class="mb-0">&copy; <a class="text-primary" href="https://Roadways.ltd/">Roadways LTD 2023</a>. All Rights Reserved.</p>
+        </div>
+        <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
+            <!-- <p class="mb-0">Designed by <a class="text-dark" href="https://freewebsitecode.com">Free Website Code</a></p> -->
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+{% endblock %}
